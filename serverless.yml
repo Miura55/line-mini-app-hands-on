@@ -73,6 +73,14 @@ resources:
         BucketName: '${self:custom.app.PUBLIC_BUCKET}'
         WebsiteConfiguration:
           IndexDocument: index.html
+        OwnershipControls:
+          Rules:
+            - ObjectOwnership: ObjectWriter
+        PublicAccessBlockConfiguration:
+          BlockPublicAcls: false
+          BlockPublicPolicy: false
+          IgnorePublicAcls: false
+          RestrictPublicBuckets: false
     StaticSiteS3BucketPolicy:
       Type: AWS::S3::BucketPolicy
       Properties:
