@@ -1,7 +1,4 @@
-FROM node:18-buster 
-
-# Install Yarn
-RUN npm install -g yarn
+FROM node:18-buster
 
 # Install AWS CLI
 RUN pip3 install awscli --upgrade --user
