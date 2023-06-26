@@ -3,6 +3,4 @@ image:
 
 tasks:
     - name: Install serverless
-      command: npm install -g serverless
-    - name: Install serverless plugins
-      command: yarn install 
+      command: npm install -g serverless@3.20

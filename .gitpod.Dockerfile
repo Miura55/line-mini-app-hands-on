@@ -8,4 +8,7 @@ RUN curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2
 
 USER gitpod
 
+# Export Environment Variables
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
 COPY . ./line-mini-app-hands-on
