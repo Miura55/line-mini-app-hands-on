@@ -11,5 +11,3 @@ USER gitpod
 # Export Environment Variables
 ENV NODE_OPTIONS=--openssl-legacy-provider
 RUN npm install --location=global serverless@3.20
-
-COPY . ./line-mini-app-hands-on

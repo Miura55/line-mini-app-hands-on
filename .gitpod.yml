@@ -1,4 +1,5 @@
-image: public.ecr.aws/jsii/superchain:1-buster-slim-node18
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
     - name: Install serverless plugins
