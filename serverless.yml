@@ -69,7 +69,7 @@ resources:
     S3Storage:
       Type: 'AWS::S3::Bucket'
       Properties:
-        AccessControl: PublicRead
+        #AccessControl: PublicRead
         BucketName: '${self:custom.app.PUBLIC_BUCKET}'
         WebsiteConfiguration:
           IndexDocument: index.html
