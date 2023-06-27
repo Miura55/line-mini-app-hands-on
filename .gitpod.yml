@@ -2,7 +2,5 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-    - name: Install serverless
-      command: npm install -g serverless@3.20
     - name: Install serverless plugins
       command: yarn install 
