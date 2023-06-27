@@ -1,6 +1,7 @@
-image:
-  file: .gitpod.Dockerfile
+image: public.ecr.aws/jsii/superchain:1-buster-slim-node18
 
 tasks:
-    - name: Install serverless plugins
-      command: yarn install 
+  - name: Install serverless
+    command: npm install -g serverless
+  - name: Install serverless plugins
+    command: yarn install 
