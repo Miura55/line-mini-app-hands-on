@@ -1,4 +1,4 @@
-image: public.ecr.aws/jsii/superchain:1-buster-slim-node18
+image: gitpod/workspace-full 
 
 tasks:
   - name: Install AWS CLI v2
