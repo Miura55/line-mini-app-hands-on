@@ -9,4 +9,4 @@ tasks:
   - name: Install serverless
     command: npm install -g serverless@3.20.0
   - name: Install serverless plugins
-    command: yarn install 
+    command: export NODE_OPTIONS=--openssl-legacy-provider && yarn install 
