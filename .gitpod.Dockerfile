@@ -8,4 +8,7 @@ USER root:root
 # install jq wget
 RUN apt-get update && apt-get install -y jq wget
 
+# install serverless
+RUN npm install -g serverless@3.20.0
+
 USER superchain:superchain
