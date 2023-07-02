@@ -6,7 +6,9 @@ github:
 image: 
   file: .gitpod.Dockerfile
 tasks:
-  - init: ${GITPOD_REPO_ROOT}/init.sh
+  - init: |
+      yarn install 
+      export NODE_OPTIONS="--max-old-space-size=1024" 
 
 vscode:
   extensions:
