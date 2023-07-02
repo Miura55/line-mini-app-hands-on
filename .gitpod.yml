@@ -1,12 +1,13 @@
-image: gitpod/workspace-full 
-
+github:
+  prebuilds:
+    pullRequestsFromForks: true
+    addComment: true
+    
+image: 
+  file: .gitpod.Dockerfile
 tasks:
-  - name: Install AWS CLI v2
-    command: |
-      curl -sSL "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-      unzip awscliv2.zip
-      sudo ./aws/install
-  - name: Install serverless
-    command: npm install -g serverless@3.20.0
-  - name: Install serverless plugins
-    command: export NODE_OPTIONS=--openssl-legacy-provider && yarn install 
+  - init: ${GITPOD_REPO_ROOT}/init.sh
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
